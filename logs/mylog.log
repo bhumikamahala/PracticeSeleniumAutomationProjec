@@ -28,3 +28,29 @@
 [INFO ] 2025-12-28 19:10:06.100 [main] AutomationProject - click on submit account create
 [INFO ] 2025-12-28 19:10:15.222 [main] AutomationProject - account creation failed - test failed
 [INFO ] 2025-12-28 19:10:15.222 [main] AutomationProject - account registered successfully
+[INFO ] 2025-12-28 20:45:09.960 [main] AutomationProject - url opened
+[INFO ] 2025-12-28 20:45:11.736 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-28 20:45:12.124 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 20:48:12.167 [main] AutomationProject - url opened
+[INFO ] 2025-12-28 20:48:13.947 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-28 20:48:14.435 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 20:51:34.130 [main] AutomationProject - url opened
+[INFO ] 2025-12-28 20:51:40.248 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-28 20:51:40.885 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 20:51:50.961 [main] AutomationProject - account creation failed - test failed
+[INFO ] 2025-12-28 20:51:50.961 [main] AutomationProject - account registered successfully
+[INFO ] 2025-12-28 20:52:18.977 [main] AutomationProject - url opened
+[INFO ] 2025-12-28 20:52:20.234 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-28 20:52:20.664 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 20:52:29.732 [main] AutomationProject - account creation failed - test failed
+[INFO ] 2025-12-28 20:52:29.732 [main] AutomationProject - account registered successfully
+[INFO ] 2025-12-28 20:53:09.323 [TestNG-tests-1] AutomationProject - url opened
+[INFO ] 2025-12-28 20:53:10.707 [TestNG-tests-1] AutomationProject - click on sign in
+[INFO ] 2025-12-28 20:53:11.069 [TestNG-tests-1] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 20:53:20.099 [TestNG-tests-1] AutomationProject - account creation failed - test failed
+[INFO ] 2025-12-28 20:53:20.100 [TestNG-tests-1] AutomationProject - account registered successfully
+[INFO ] 2025-12-28 20:54:01.582 [TestNG-test-MyTest-1] AutomationProject - url opened
+[INFO ] 2025-12-28 20:54:03.205 [TestNG-test-MyTest-1] AutomationProject - click on sign in
+[INFO ] 2025-12-28 20:54:03.665 [TestNG-test-MyTest-1] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 20:54:13.861 [TestNG-test-MyTest-1] AutomationProject - account creation failed - test failed
+[INFO ] 2025-12-28 20:54:13.862 [TestNG-test-MyTest-1] AutomationProject - account registered successfully

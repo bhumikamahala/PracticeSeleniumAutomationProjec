@@ -6,7 +6,22 @@ import PageObject.Request.MyAccountPage;
 import PageObject.Request.RegisteredUserAccountDetail;
 import org.testng.annotations.Test;
 
+import java.util.Random;
+
 public class MyAccountTest extends BaseClass{
+
+    public static String generateRandomAlpha(int length) {
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        StringBuilder sb = new StringBuilder();
+        Random random = new Random();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(alphabet.length());
+            sb.append(alphabet.charAt(index));
+        }
+        return sb.toString();
+    }
+
      @Test(description = "Register and login to website")
     public void registrationAndLogin(){
         driver.get(url);
@@ -16,8 +31,8 @@ public class MyAccountTest extends BaseClass{
         indexPage.ClickOnSignIn();
         logger.info("click on sign in");
 
-         String Firstname = java.util.UUID.randomUUID().toString().substring(0,5).replaceAll("[^A-Za-z]", "");
-         String Lastname = java.util.UUID.randomUUID().toString().substring(0,5).replaceAll("[^A-Za-z]", "");
+         String Firstname = generateRandomAlpha(5);
+         String Lastname = generateRandomAlpha(5);
          String email = Firstname + Lastname + "@gmail.com";
          String password = "Password123";
         MyAccountPage myAccountPage = new MyAccountPage(driver);
