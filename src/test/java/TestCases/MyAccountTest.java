@@ -1,9 +1,9 @@
 package TestCases;
 
-import PageObject.AccountCreationDet;
-import PageObject.IndexPage;
-import PageObject.MyAccountPage;
-import PageObject.RegisteredUserAccountDetail;
+import PageObject.Request.AccountCreationDet;
+import PageObject.Request.IndexPage;
+import PageObject.Request.MyAccountPage;
+import PageObject.Request.RegisteredUserAccountDetail;
 import org.testng.annotations.Test;
 
 public class MyAccountTest extends BaseClass{
@@ -16,16 +16,20 @@ public class MyAccountTest extends BaseClass{
         indexPage.ClickOnSignIn();
         logger.info("click on sign in");
 
+         String Firstname = java.util.UUID.randomUUID().toString().substring(0,5).replaceAll("[^A-Za-z]", "");
+         String Lastname = java.util.UUID.randomUUID().toString().substring(0,5).replaceAll("[^A-Za-z]", "");
+         String email = Firstname + Lastname + "@gmail.com";
+         String password = "Password123";
         MyAccountPage myAccountPage = new MyAccountPage(driver);
-        myAccountPage.enterEmailText("csabcd1234@gmail.com");
+         myAccountPage.enterEmailText(email);
         myAccountPage.clickOnAccountCreate();
         logger.info("click on submit account create");
 
          AccountCreationDet accountCreationDet = new AccountCreationDet(driver);
          accountCreationDet.selectTitleMr();
-            accountCreationDet.InputFirstName("John");
-            accountCreationDet.InputLastName("Doe");
-         accountCreationDet.InputPassword("Password123");
+            accountCreationDet.InputFirstName(Firstname);
+            accountCreationDet.InputLastName(Lastname);
+         accountCreationDet.InputPassword(password);
 //         accountCreationDet.InputAddressLine1("123 Main St");
 //         accountCreationDet.InputCity("New York");
 //         accountCreationDet.InputAddressAlias("My Address");
@@ -44,4 +48,6 @@ public class MyAccountTest extends BaseClass{
             }
          logger.info("account registered successfully");
     }
+
+
 }

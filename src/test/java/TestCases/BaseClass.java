@@ -2,11 +2,16 @@ package TestCases;
 
 import Utilities.ReadConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.*;
@@ -50,5 +55,13 @@ public class BaseClass {
             driver.close();
             driver.quit();
         }
+    }
+
+    public void captureScreenShot(WebDriver driver, String testName) throws IOException {
+        // code to capture screenshot
+        TakesScreenshot ts= (TakesScreenshot) driver;
+        File source = ts.getScreenshotAs(OutputType.FILE); // call getScreenshotAs method to create image file
+        File target = new File(System.getProperty("user.dir") + "/Screenshots/" + testName + ".png");
+        FileUtils.copyFile(source,target);
     }
 }

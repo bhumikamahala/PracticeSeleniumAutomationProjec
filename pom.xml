@@ -88,5 +88,35 @@
           <artifactId>log4j-api</artifactId>
           <version>2.25.2</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+      <dependency>
+          <groupId>io.rest-assured</groupId>
+          <artifactId>rest-assured</artifactId>
+          <version>6.0.0</version>
+          <scope>test</scope>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+      <dependency>
+          <groupId>io.rest-assured</groupId>
+          <artifactId>json-path</artifactId>
+          <version>6.0.0</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+      <dependency>
+          <groupId>io.rest-assured</groupId>
+          <artifactId>json-schema-validator</artifactId>
+          <version>6.0.0</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.15.2</version>
+      </dependency>
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.30</version>
+          <scope>provided</scope>
+      </dependency>
   </dependencies>
 </project>

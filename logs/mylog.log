@@ -20,3 +20,11 @@
 [INFO ] 2025-12-08 13:23:00.060 [main] AutomationProject - url opened
 [INFO ] 2025-12-08 13:23:01.433 [main] AutomationProject - click on sign in
 [INFO ] 2025-12-08 13:23:01.840 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 19:07:41.071 [main] AutomationProject - url opened
+[INFO ] 2025-12-28 19:07:44.327 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-28 19:07:45.142 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 19:10:03.967 [main] AutomationProject - url opened
+[INFO ] 2025-12-28 19:10:05.575 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-28 19:10:06.100 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-28 19:10:15.222 [main] AutomationProject - account creation failed - test failed
+[INFO ] 2025-12-28 19:10:15.222 [main] AutomationProject - account registered successfully
