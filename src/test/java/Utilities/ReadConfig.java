@@ -44,4 +44,11 @@ public class ReadConfig {
             throw new RuntimeException("browser not specified in config file");
     }
 
+    public String getOS() {
+        return properties.getProperty("operatingSystem");
+    }
+
+    public String getProperty(String key) {
+        return properties.getProperty(key);
+    }
 }

@@ -4,6 +4,7 @@ import PageObject.Request.AccountCreationDet;
 import PageObject.Request.IndexPage;
 import PageObject.Request.MyAccountPage;
 import PageObject.Request.RegisteredUserAccountDetail;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Random;
@@ -56,12 +57,16 @@ public class MyAccountTest extends BaseClass{
          // validate that account is created successfully
          RegisteredUserAccountDetail registeredUserAccountDetail = new RegisteredUserAccountDetail(driver);
          String acctName = registeredUserAccountDetail.getAccountName();
-            if(acctName.equals("John Doe")){
-               logger.info("account created successfully - test passed");
-            } else {
-                logger.info("account creation failed - test failed");
-            }
-         logger.info("account registered successfully");
+         
+         // Format expected name to match website's formatting (capitalize first letter of first name)
+         String formattedFirstName = Firstname.isEmpty() ? Firstname : 
+             Firstname.substring(0, 1).toUpperCase() + Firstname.substring(1).toLowerCase();
+         String expectedName = formattedFirstName + " " + Lastname;
+         
+         // Assert that the account name matches the expected name (case-insensitive comparison)
+         Assert.assertEquals(acctName, expectedName, "Account name mismatch - Expected: " + expectedName + ", Actual: " + acctName);
+         logger.info("Account created successfully with name: " + acctName);
+         logger.info("Account registered successfully");
     }
 
 

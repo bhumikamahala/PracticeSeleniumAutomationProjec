@@ -4,8 +4,8 @@
     <test name="MyTest">
         <classes>
             <class name="TestCases.MyAccountTest" />
-            <class name="TestCases.UserDetailTest"></class>
-            <class name="TestCases.UserTest"></class>
+            <class name="TestCases.UserDetailTest"/>
+            <class name="TestCases.UserTest"/>
         </classes>
     </test>
 </suite>

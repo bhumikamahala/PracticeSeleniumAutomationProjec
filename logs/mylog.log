@@ -54,3 +54,16 @@
 [INFO ] 2025-12-28 20:54:03.665 [TestNG-test-MyTest-1] AutomationProject - click on submit account create
 [INFO ] 2025-12-28 20:54:13.861 [TestNG-test-MyTest-1] AutomationProject - account creation failed - test failed
 [INFO ] 2025-12-28 20:54:13.862 [TestNG-test-MyTest-1] AutomationProject - account registered successfully
+[INFO ] 2025-12-29 16:40:58.954 [main] AutomationProject - url opened
+[INFO ] 2025-12-29 16:41:01.317 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-29 16:41:02.037 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-29 16:42:33.603 [main] AutomationProject - url opened
+[INFO ] 2025-12-29 16:42:35.776 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-29 16:42:36.675 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-29 16:42:44.952 [main] AutomationProject - Account created successfully with name: Vfxbv dJveN
+[INFO ] 2025-12-29 16:42:44.954 [main] AutomationProject - Account registered successfully
+[INFO ] 2025-12-29 16:47:59.309 [main] AutomationProject - url opened
+[INFO ] 2025-12-29 16:48:02.648 [main] AutomationProject - click on sign in
+[INFO ] 2025-12-29 16:48:05.764 [main] AutomationProject - click on submit account create
+[INFO ] 2025-12-29 16:48:15.624 [main] AutomationProject - Account created successfully with name: Kejsi KZKSX
+[INFO ] 2025-12-29 16:48:15.624 [main] AutomationProject - Account registered successfully
